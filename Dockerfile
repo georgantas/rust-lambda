@@ -11,7 +11,7 @@ RUN apt-get -y install python3-pip
 
 RUN pip3 install cargo-lambda
 
-RUN cargo lambda build --release --arm64
+RUN cargo lambda build --release
 
 FROM rust:latest
 
