@@ -24,7 +24,7 @@ async fn func(event: LambdaEvent<NameInputEvent>) -> Result<HelloWorldResponse, 
     let (event, _context) = event.into_parts();
 
     let hello_world_response = HelloWorldResponse {
-        message: format!("Hello, {}!", event.first_name),
+        message: format!("Hello, {}! Welcome to rust-lambda.", event.first_name),
     };
 
     Ok(hello_world_response)
